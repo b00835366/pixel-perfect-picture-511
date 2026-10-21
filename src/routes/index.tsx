@@ -56,14 +56,14 @@ function Index() {
             <span className="label">Price: Free</span>
           </div>
           <h1 className="font-display text-center text-[26vw] leading-[0.85] italic md:text-[19vw]">
-            <RevealLines lines={["Récré"]} />
+            <RevealLines immediate delay={0.2} lines={["Récré"]} />
           </h1>
 
           <div className="relative mt-4 grid items-end gap-10 md:grid-cols-12">
             <div className="z-10 md:col-span-4">
               <p className="label">Cover story: Your brain</p>
               <h2 className="font-display mt-4 text-5xl leading-[0.95] md:text-6xl">
-                <RevealLines lines={["Welcome to", <em key="r" className="text-tomato">Récré.</em>]} delay={0.3} />
+                <RevealLines immediate lines={["Welcome to", <em key="r" className="text-tomato">Récré.</em>]} delay={0.4} />
               </h2>
               <p className="mt-6 max-w-xs">Big ideas. Little games. A whole lot of learning.</p>
               <Link to="/explore" className="btn-ink mt-8">Let's play →</Link>
