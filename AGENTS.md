@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Session list lives in src/data/sessions.ts and game content in src/data/games.ts keyed by session id; pages/games render from them so content edits never need layout changes.
+- Progress persists in localStorage via useLocalStorage (keys prefixed "recre:"); there is no backend.
